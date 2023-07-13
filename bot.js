@@ -16,7 +16,7 @@ var octokit = new Octokit();
 // Inital Setup
 bot.start((ctx) => {
   const startMessage = `
-  Welcome to our GitHub Bot!\
+  Welcome to the GitHub Bot by Rishabh Prasad!\
   \nUse /help to know the services provided by the bot.
   `;
   ctx.reply(startMessage);
@@ -34,6 +34,7 @@ bot.help((ctx) => {
 \n\n  /addcollaborator - Add a collaborator to a repository\
 \n  /getcollaborators - Get the list of collaborators for a repository\
 \n  /removecollaborator - Remove a collaborator from a repository\
+\n  <repository> => {owner_of_repository}/{repository_name}
 \n\nPlease use these commands to interact with the bot. Enjoy!
 `;
 
